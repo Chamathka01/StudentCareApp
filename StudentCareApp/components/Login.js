@@ -1,5 +1,5 @@
 import { View } from 'react-native';
-import { PaperProvider } from 'react-native-paper';
+import { PaperProvider, Text, Divider, TextInput, Button } from 'react-native-paper';
 export default function Login(){
     return(
         <PaperProvider>
@@ -11,6 +11,10 @@ export default function Login(){
             </View>
             <View>
             <TextInput label="Password" mode='outlined' value={Password} onChangeText={setPassword} />
+            </View>
+            <View>
+            <Button mode='contained' onPress={()=>navigation.navigate('')}>
+            Login</Button>
             </View>
             
         </PaperProvider>
