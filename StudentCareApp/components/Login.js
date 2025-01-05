@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { View } from 'react-native';
 import { PaperProvider, Text, Divider, TextInput, Button } from 'react-native-paper';
 export default function Login(){
+    const [name, setName] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigation();
     return(
         <PaperProvider>
             <View>
