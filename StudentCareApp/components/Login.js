@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Image, ScrollView, StyleSheet, View } from "react-native";
 import { View } from 'react-native';
 import { PaperProvider, Text, Divider, TextInput, Button } from 'react-native-paper';
 import { students } from "../data/StudentsDb";
@@ -25,6 +26,12 @@ export default function Login(){
             <View style={styles.header}>
              <Text style={styles.headerText}>UoV Student Care</Text>
              </View>
+             <View style={styles.imagecontain}>
+             <Image
+            source={require("../assets/uovlogo.png")}
+            style={styles.image}
+          />
+        </View>
             <View style={styles.header}>
             <Text variant = "headlineLarge">STUDENT LOGIN</Text>
             </View>
