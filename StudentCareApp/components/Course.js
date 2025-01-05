@@ -1,5 +1,6 @@
 import { Image, ScrollView, StyleSheet, View } from "react-native";
 import { PaperProvider, Text, Divider } from "react-native-paper";
+
 export default function Course() {
   const sampleCourseData = {
     courseName: "Introduction to React Native",
