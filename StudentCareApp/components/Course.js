@@ -13,6 +13,33 @@ export default function Course() {
             style={styles.image}
           />
         </View>
+        <View style={styles.courseInfoContainer}>
+          <Text style={styles.title}>Course Information</Text>
+
+          <Text style={styles.infoText}>
+            <Text style={styles.label}>Course Name: </Text>
+            {sampleCourseData.courseName}
+          </Text>
+
+          <Text style={styles.infoText}>
+            <Text style={styles.label}>Course Code: </Text>
+            {sampleCourseData.courseCode}
+          </Text>
+
+          <Text style={styles.infoText}>
+            <Text style={styles.label}>Department: </Text>
+            {sampleCourseData.department}
+          </Text>
+
+          <Text style={styles.infoText}>
+            <Text style={styles.label}>Duration: </Text>
+            {sampleCourseData.duration}
+          </Text>
+
+          <Text style={styles.infoText}>
+            <Text style={styles.label}>Description: </Text>
+            {sampleCourseData.description}
+          </Text>
         </ScrollView>
         </PaperProvider>
     );
