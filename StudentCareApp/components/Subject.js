@@ -1,4 +1,13 @@
+import React, { useState } from "react";
+import { Image, ScrollView, StyleSheet, View } from "react-native";
+import { Button, Divider, PaperProvider, Text, TextInput, List } from "react-native-paper";
+import { useNavigation } from "@react-navigation/native";
+
 export default function Subjects() {
+    const [subject, setSubject] = useState("");
+    const [marks, setMarks] = useState("");
+    const [courses, setCourses] = useState([]);
+    const [average, setAverage] = useState(null);
     return(
         <PaperProvider>
       <ScrollView style={styles.container}>
