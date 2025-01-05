@@ -37,8 +37,10 @@ export default function Login(){
             secureTextEntry
             onChangeText={setPassword}
           />
-            <Button mode='contained' onPress={()=>navigation.navigate('')}>
-            Login</Button>
+            <View style={styles.buttoncontainer}>
+            <Button mode="contained" onPress={handlebutton}>
+              Login
+            </Button>
             </View>
             </Scrollview> 
         </PaperProvider>
