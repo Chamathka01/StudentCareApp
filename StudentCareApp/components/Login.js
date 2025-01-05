@@ -35,7 +35,6 @@ export default function Login(){
             <Text style={styles.loginText}>STUDENT LOGIN</Text>
             <Divider/>
             </View>
-            <View>
             <View style={styles.formcontainer}>
             <TextInput label="Username" mode="outlined" onChangeText={setName} />
             <TextInput

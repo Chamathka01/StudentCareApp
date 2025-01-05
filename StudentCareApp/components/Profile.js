@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
       overflow: "hidden",
       marginBottom: 20,
       borderWidth: 3,
-      borderColor: "#8b008b", // Matching border color
+      borderColor: "#8b008b",
     },
     studentDetails: {
       fontSize: 18,
