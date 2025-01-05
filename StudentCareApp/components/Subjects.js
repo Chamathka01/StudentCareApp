@@ -8,6 +8,26 @@ export default function Subjects() {
     const [marks, setMarks] = useState("");
     const [courses, setCourses] = useState([]);
     const [average, setAverage] = useState(null);
+
+    const handleAddCourse = () => {
+      if (subject && marks) {
+        const marksNum = parseFloat(marks);
+        if (!isNaN(marksNum)) {
+          setCourses((prevCourses) => [
+            ...prevCourses,
+            { subject, marks: marksNum },
+          ]);
+          setSubject("");
+          setMarks("");
+          calculateAverage();
+        } else {
+          alert("Please enter valid marks.");
+        }
+      } else {
+        alert("Please enter both subject and marks.");
+      }
+    };
+    
     return(
         <PaperProvider>
       <ScrollView style={styles.container}>
