@@ -57,7 +57,7 @@ This project is a mobile app built using React Native for a student management s
 │   ├── Course.js            # Course information screen component
 │   ├── Subjects.js          # Subject and marks input and display component
 ├── assets
-│   └── images               # Images used in the app (e.g., logos, profile pictures)
+│   └── profilepic           # Images used in the app (e.g., logos, profile pictures)
 ├── App.js                   # Root component that sets up navigation and routing
 ├── data
 │   └── StudentsDb.js        # A mock database of student data (e.g., usernames, passwords, profiles)
