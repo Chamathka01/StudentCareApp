@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Image, ScrollView, StyleSheet } from "react-native";
-import { View } from 'react-native';
+import { Image, ScrollView, StyleSheet, View } from "react-native";
 import { PaperProvider, Text, Divider, TextInput, Button } from 'react-native-paper';
 import { students } from "../data/StudentsDb";
 import { useNavigation } from "@react-navigation/native";
