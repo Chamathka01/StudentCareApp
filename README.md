@@ -1,53 +1,50 @@
-# StudentCareApp
+# Student Care App
 
 
 ## 2020ICT57
 
 
-This project is a simple mobile application built using React Native and React Navigation. It is designed to display different screens such as "Home," "Contact Us," and "About Us," with the ability to navigate between these screens. The app features smooth navigation, form input handling, and text-based content, and it incorporates elements from React Native Paper for UI components. The application provides a basic structure for building and navigating through different sections of a mobile app.
+This project is a mobile app built using React Native for a student management system. The application provides students with a platform to view their profile, courses, and subjects. It offers a login system for authentication and displays relevant information for each student, such as their personal details, course information, and academic performance. 
 
 
 ## Project Overview
 
 ### Files
-- **App.js**: This is the main entry point for the app. It sets up the navigation container and the stack navigator. 
-- **Home.js**:  Displays the home screen with introductory content.Includes two buttons that navigate to the "Contact Us" and "About Us" screens.
-- **ContactUs.js**: Displays the contact form, where users can input their name, email, phone number, and message.
-- **AboutUs.js**: Displays information about the University of Vavuniya, including its history and background.
+- **App.js**: Sets up the root navigation structure of the application. 
+- **Login.js**:  Handles the student login functionality.
+- **Profile.js**: Displays the student's profile information after successful login.
+- **Course.js**: Displays information about a specific course.
+- **Students.js**: Allows students to input and view their subject names and marks.
 
 
 ## Features
 
-- **Multiple Screens**: The app includes three main screens: Home, Contact Us, and About Us. Each screen displays different content and functionality.
+- **User Authentication**: The login screen allows students to sign in using their credentials. 
 
-- **Navigation**: Users can navigate between screens using React Navigation's stack navigation. Buttons are provided to move between the screens.
+- **Profile Management**: Once logged in, students can view their personal information, contact details, and profile picture.
 
-- **Form Handling in Contact Us**: The Contact Us screen allows users to input their details, including name, email, phone number, and a message. The app updates the state using the useState hook for each input field.
+- **Course Information**: Displays details about a specific course, such as name, code, department, and description.
 
-- **Responsive Design**: The app uses KeyboardAvoidingView to adjust the UI when the keyboard is displayed, ensuring a smooth user experience when interacting with text fields.
+- **Subject Management**: Allows students to add subjects and marks, and calculates the average of all marks entered.
 
-- **UI Components**: The app uses React Native Paper components such as Text, TextInput, Button, and Divider to create a clean, consistent UI.
+- **Navigation**: Utilizes React Navigation to navigate between different sections like login, profile, courses, and subjects.
 
-- **ScrollView**: A ScrollView is used on multiple screens (Home, Contact Us, and About Us) to ensure that content can be scrolled if it exceeds the available screen space.
+- **Mobile-first Design**: The app is designed to be responsive on mobile devices with easy-to-read text, buttons, and form inputs.
 
-- **Cross-Platform Compatibility**: The app is compatible with both iOS and Android, with platform-specific adjustments made using the Platform API (e.g., adjusting the keyboard behavior).
-
-- **Footer**: Each screen includes a footer with the text "MyApp © 2024," providing a simple branding element at the bottom.
 
 
 ## Technologies Used
 
-- **React Native**:  Framework for building cross-platform mobile applications for iOS and Android using JavaScript and React.
+- **React Native**:  A framework for building mobile applications using JavaScript and React.
 
-- **React Navigation**: Library for handling navigation between screens in the app.
+- **React Navigation**: Used for handling screen navigation within the app.
 
-- **React Native Paper**:  A UI library for React Native, offering pre-designed components like TextInput, Button, Text, Divider, and more.
+- **React Native Paper**:  A library of components that follow Material Design guidelines for building user interfaces.
 
-- **KeyboardAvoidingView**: Helps handle the keyboard's behavior to prevent it from overlapping the UI when input fields are focused.
+- **Expo**: An open-source platform for React Native development
 
-- **Platform**: Used to determine whether the app is running on iOS or Android and adjust the UI accordingly.
+- **StyleSheet**: React Native’s built-in styling solution for consistent and scalable UI styling.
 
-- **State Management (useState)**: React Hook to manage the state of form inputs and navigation.
 
 
 ## Project Structure
@@ -55,28 +52,32 @@ This project is a simple mobile application built using React Native and React N
 ```
 
 ├── components
-│   ├── ContactUs.js       # contactus component
-│   ├── AboutUs.js         # About Us component
-│   ├── Home.js            # Home component
-├── App.js                 # Root component
+│   ├── Login.js             # Login screen component where students enter their credentials
+│   ├── Profile.js           # Profile screen component displaying student information
+│   ├── Course.js            # Course information screen component
+│   ├── Subjects.js          # Subject and marks input and display component
 ├── assets
-│   └── images             # Images of the app
-├── package.json           # Project configuration
-├── README.md              # Documentation
+│   └── images               # Images used in the app (e.g., logos, profile pictures)
+├── App.js                   # Root component that sets up navigation and routing
+├── data
+│   └── StudentsDb.js        # A mock database of student data (e.g., usernames, passwords, profiles)
+├── package.json             # Project dependencies and configuration
+├── README.md                # Documentation for the project, describing its functionality and setup
+
 
 ```
 
 ## How to Run
 
-1. Creates a new Expo project named mobileApp using the blank template.
+1. Creates a new Expo project named StudentCareApp using the blank template.
     ```bash
-    npx create-expo-app mobileApp --template blank
+    npx create-expo-app StudentCareApp --template blank
     ```
 
 
-2. Changes the current directory to the newly created mobileApp project directory.
+2. Changes the current directory to the newly created StudentCareApp project directory.
    ```bash
-   cd mobileApp
+   cd StudentCareApp
    ```
 
 
