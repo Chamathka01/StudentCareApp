@@ -29,12 +29,14 @@ export default function Login(){
             <Text variant = "headlineLarge">STUDENT LOGIN</Text>
             </View>
             <View>
-            <TextInput label="UserName" mode='outlined' value={UserName} onChangeText={setUserName} />
-            </View>
-            <View>
-            <TextInput label="Password" mode='outlined' value={Password} onChangeText={setPassword} />
-            </View>
-            <View>
+            <View style={styles.formcontainer}>
+            <TextInput label="Username" mode="outlined" onChangeText={setName} />
+            <TextInput
+            label="Password"
+            mode="outlined"
+            secureTextEntry
+            onChangeText={setPassword}
+          />
             <Button mode='contained' onPress={()=>navigation.navigate('')}>
             Login</Button>
             </View>
