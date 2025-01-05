@@ -26,6 +26,14 @@ export default function Profile({ route }) {
           <Text style={styles.studentDetails}>Age:{studentdata.age}</Text>
           <Text style={styles.studentDetails}>Gender:{studentdata.gender}</Text>
         </View>
+        <View style={styles.contactInfoContainer}>
+          <Text style={styles.contactTitle}>Contact Information</Text>
+          <Text style={styles.contactDetails}>Email: {studentdata.email}</Text>
+          <Text style={styles.contactDetails}>Phone: {studentdata.phone}</Text>
+          <Text style={styles.contactDetails}>
+            Address: {studentdata.address}
+          </Text>
+        </View>
         </ScrollView>   
         </PaperProvider>
     );
