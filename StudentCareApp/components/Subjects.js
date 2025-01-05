@@ -44,7 +44,7 @@ export default function Subjects() {
         </View>
         <View style={styles.imagecontain}>
           <Image
-            source={require("../assets/uovlogo.png")}
+            source={require("../assets/Logo.png")}
             style={styles.image}
           />
         </View>
