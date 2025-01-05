@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Image, ScrollView, StyleSheet, View } from "react-native";
+import { Image, ScrollView, StyleSheet } from "react-native";
 import { View } from 'react-native';
 import { PaperProvider, Text, Divider, TextInput, Button } from 'react-native-paper';
 import { students } from "../data/StudentsDb";
@@ -22,7 +22,7 @@ export default function Login(){
       };
     return(
         <PaperProvider>
-            <Scrollview>
+            <ScrollView>
             <View style={styles.header}>
              <Text style={styles.headerText}>UoV Student Care</Text>
              </View>
@@ -33,7 +33,7 @@ export default function Login(){
           />
         </View>
             <View style={styles.container}>
-            <Text variant = "headlineLarge">STUDENT LOGIN</Text>
+            <Text style={styles.loginText}>STUDENT LOGIN</Text>
             <Divider/>
             </View>
             <View>
@@ -50,7 +50,8 @@ export default function Login(){
               Login
             </Button>
             </View>
-            </Scrollview> 
+            </View>
+            </ScrollView> 
         </PaperProvider>
     );
 }
