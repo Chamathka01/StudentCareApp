@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { View } from 'react-native';
 import { PaperProvider, Text, Divider, TextInput, Button } from 'react-native-paper';
+import { students } from "../data/StudentsDb";
+import { useNavigation } from "@react-navigation/native";
 export default function Login(){
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
@@ -19,7 +21,11 @@ export default function Login(){
       };
     return(
         <PaperProvider>
-            <View>
+            <Scrollview>
+            <View style={styles.header}>
+             <Text style={styles.headerText}>UoV Student Care</Text>
+             </View>
+            <View style={styles.header}>
             <Text variant = "headlineLarge">STUDENT LOGIN</Text>
             </View>
             <View>
@@ -32,7 +38,7 @@ export default function Login(){
             <Button mode='contained' onPress={()=>navigation.navigate('')}>
             Login</Button>
             </View>
-            
+            </Scrollview> 
         </PaperProvider>
     );
 }
