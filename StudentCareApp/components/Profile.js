@@ -34,6 +34,19 @@ export default function Profile({ route }) {
             Address: {studentdata.address}
           </Text>
         </View>
+
+        <Divider></Divider>
+        <View style={styles.biologicalInfoContainer}>
+          <Text style={styles.biologicalTitle}>Biological Information</Text>
+          <Text style={styles.biologicalDetails}>
+            Gender: {studentdata.gender}
+          </Text>
+          <Text style={styles.biologicalDetails}>Age: {studentdata.age}</Text>
+          <Text style={styles.biologicalDetails}>
+            Blood Group: {studentdata.blood_group}
+          </Text>
+        </View>
+
         <View style={styles.buttonContainer}>
           <Button
             mode="contained"

@@ -1,6 +1,14 @@
 import { Image, ScrollView, StyleSheet, View } from "react-native";
 import { PaperProvider, Text, Divider } from "react-native-paper";
 export default function Course() {
+  const sampleCourseData = {
+    courseName: "Introduction to React Native",
+    courseCode: "CS101",
+    department: "Engineering",
+    duration: "4 Years",
+    description: "Focus on Programming Algorithm and System Design",
+  };
+
     return(
         <PaperProvider>
         <ScrollView style={styles.container}>
